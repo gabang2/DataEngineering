@@ -1,3 +1,5 @@
+package `class`
+
 object oop {
   def main(args: Array[String]): Unit = {
 
