@@ -1,17 +1,11 @@
-val anything: Int = 1
+var Number: Int = 24
 
-def checkValue(anything: Int): String =
-  anything match{
-    case 0 => "Matched 0"
-    case 1 => "Matched 1"
-    case _ => "No match!"
-  }
+def checkNumber(Number: Int): String = Number match {
+  case 1 => "match 1"
+  case 2 => "match 2"
+  case _ => "match noting"
+}
 
-val case0: String = checkValue(anything=0)
-println(case0)
-val case1: String = checkValue(anything=1)
-println(case1)
-val case2: String = checkValue(anything=2)
-println(case2)
-
-val caseString0 :String= checkValue(anything=0)
+val Case1: String = checkNumber(Number = 1)
+val Case2: String = checkNumber(Number = 2)
+val Case3: String = checkNumber(Number = 3)

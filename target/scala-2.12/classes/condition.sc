@@ -1,26 +1,17 @@
-val condition:Boolean = true
-if(condition) {
-  "condition is True"
-}
+// if문 기본 형식
+val condition: Boolean = true
+if(condition) println("This statement is true")
 
-val a = 1
-val b = 2
-val smallerNum = if(a < b) a else b
-println(smallerNum)
+// if-else문 기본 형식
+val a = 10
+val b = 20
 
-if (a < b) println("a is smaller") //값을 리턴하지 않으면statement로 사용됨
-
-if (a == b) {
-  println("a equals b")
-  if (a > 0) {
-    println("a is larger than 0")
-  }
-} else if (a > b) {
-  println("a doesn't equal b")
-  println("a is larger than b")
-  if (a > 0) {
-    println("a is larget than 0")
-  }
+if (a > b) {
+  print("a is bigger than b")
+} else if (a == b) {
+  print("a equals b")
 } else {
-  println("a is smaller than b")
+  print("a is smaller than b")
 }
+
+// 삼항연산자
