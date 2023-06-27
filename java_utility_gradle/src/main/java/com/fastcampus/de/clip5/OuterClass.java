@@ -9,7 +9,7 @@ public class OuterClass {
 
     public static class InnerClass {
         public void printName(){
-            System.out.printlcn(this.getClass().getName());
+            System.out.println(this.getClass().getName());
             System.out.println(this.getClass().getSimpleName());
         }
     }
