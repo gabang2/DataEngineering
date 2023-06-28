@@ -5,6 +5,5 @@ public class Main {
         Bird bird = new Pigeon();
         bird.fly(1, 2, 3);
         bird.printBreed();
-
     }
 }
