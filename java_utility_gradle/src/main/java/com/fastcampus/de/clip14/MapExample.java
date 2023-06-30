@@ -29,6 +29,7 @@ public class MapExample {
             System.out.println(map2.get(key));
         }
 
+        System.out.println(map2.keySet());
         map2.remove("first");
         System.out.println(map2);
 
