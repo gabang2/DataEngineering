@@ -1,4 +1,4 @@
-package org.de.jdbc.crudexample;
+package org.de.jdbc.crudexample2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +13,6 @@ public class Main {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/de-jdbc", "root", "admin1234");
             Statement stmt = con.createStatement();
-            System.out.println(con.getMetaData().getDriverName() + con.getMetaData().getDriverVersion());
             ResultSet rs = stmt.executeQuery("select * from product");
             while (rs.next()) {
                 System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  "
