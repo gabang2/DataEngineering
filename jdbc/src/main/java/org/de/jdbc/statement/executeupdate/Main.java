@@ -10,12 +10,12 @@ public class Main {
         Connection con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/de-jdbc", "root", "admin1234");
         Statement stmt = con.createStatement();
-//        int result = stmt.executeUpdate("UPDATE product SET `price` = `price` + 10000 where id = 1");
-//        System.out.println("result of update one record : " + result);
-//        int multiResult = stmt.executeUpdate("UPDATE product SET `price` = `price` - 10000 where `name` like 'shoes%'");
-//        System.out.println("result of update one record : " + multiResult);
-
-        int result = stmt.executeUpdate("UPDATE product SET `price` = `price` + 10000 WHERE id='1222222222'");
+        int result = stmt.executeUpdate("UPDATE product SET `price` = `price` + 10000 where id = 1");
         System.out.println("result of update one record : " + result);
+        int multiResult = stmt.executeUpdate("UPDATE product SET `price` = `price` - 10000 where `name` like 'shoes%'");
+        System.out.println("result of update one record : " + multiResult);
+
+        int result2 = stmt.executeUpdate("UPDATE product SET `price` = `price` + 10000 WHERE id='1222222222'");
+        System.out.println("result of update one record : " + result2);
     }
 }
